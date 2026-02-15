@@ -7,3 +7,6 @@ langchain-google-genai
 # Streamlit - web application framework for building interactive data/AI apps
 streamlit
 
+langchain-community
+langchain-google-genai
+
