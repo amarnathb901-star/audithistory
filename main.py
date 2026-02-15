@@ -18,7 +18,21 @@ import os
 # Load the Google API key from Streamlit's secrets manager
 # and set it as an environment variable for the Google GenAI client.
 # The key should be defined in .streamlit/secrets.toml
-os.environ['GOOGLE_API_KEY'] = st.secrets['GOOGLE_API_KEY']
+!pip install langchain-openai
+import os
+os.environ['OPENAI_API_KEY'] = "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"
+
+# Import ChatOpenAI module
+from langchain_openai import ChatOpenAI
+
+# Initialize OpenAI's GPT-4o-mini
+#gpt4o_mini = ChatOpenAI(model_name = "gpt-4o-mini")  # use "gpt-4o" for larger GPT-4 model
+
+gpt4o = ChatOpenAI(model_name = "gpt-4o")
+
+%pip install langchain-google-genai
+# Using Google Models (Gemini Flash)
+#from langchain_google_genai import ChatGoogleGenerativeAI
 
 # --- Prompt Template ---
 # Define the prompt template with placeholders for the number of tweets
