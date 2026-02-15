@@ -18,7 +18,7 @@ import os
 # Load the Google API key from Streamlit's secrets manager
 # and set it as an environment variable for the Google GenAI client.
 # The key should be defined in .streamlit/secrets.toml
-!pip install langchain-openai
+pip install langchain-openai
 import os
 
 # Import ChatOpenAI module
