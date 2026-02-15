@@ -18,7 +18,6 @@ import os
 # Load the Google API key from Streamlit's secrets manager
 # and set it as an environment variable for the Google GenAI client.
 # The key should be defined in .streamlit/secrets.toml
-pip install langchain-openai
 import os
 
 # Import ChatOpenAI module
@@ -29,7 +28,6 @@ from langchain_openai import ChatOpenAI
 
 gpt4o = ChatOpenAI(model_name = "gpt-4o")
 
-%pip install langchain-google-genai
 # Using Google Models (Gemini Flash)
 #from langchain_google_genai import ChatGoogleGenerativeAI
 
