@@ -20,7 +20,6 @@ import os
 # The key should be defined in .streamlit/secrets.toml
 !pip install langchain-openai
 import os
-os.environ['OPENAI_API_KEY'] = "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"
 
 # Import ChatOpenAI module
 from langchain_openai import ChatOpenAI
