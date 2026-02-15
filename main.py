@@ -7,8 +7,9 @@
 # --- Imports ---
 # LangChain components for LLM interaction and prompt management
 from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_core.prompts import ChatPromptTemplate
 from langchain.chains import LLMChain
-from langchain.chain import PromptTemplate
+from langchain.chains import PromptTemplate
 
 # Streamlit for the web UI, os for environment variable management
 import streamlit as st
